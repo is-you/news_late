@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+{% from "component/head/head.njk" import head as head %}
+
+{{ head() }}
+
+<body>
+
+<div class="content">
+    {% include 'component/header/header.njk' %}
+
+    {% include 'component/news_category/news_category.njk' %}
+    {% include 'component/main_news/main_news.njk' %}
+    {% include 'component/news_list/news_preview.njk' %}
+
+    {% include 'component/footer/footer.njk' %}
+</div>
+
+</body>
+<script src="/js/App.js"></script>
+

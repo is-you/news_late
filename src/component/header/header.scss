@@ -1,0 +1,68 @@
+.header {
+	padding: 50px 0;
+	margin: 0 auto;
+	width: calc(100% - 180px);
+	min-width: var(--width-Content);
+
+	@media screen and (max-width: $desktop) {
+
+	}
+
+	&__nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__burger_btn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+
+		width: 55px;
+		height: 25px;
+		padding: 4px;
+
+		border-radius: 15px;
+		background: rgb(229, 41, 53);
+		box-sizing: border-box;
+
+		& .icon{
+			width: 19px;
+		}
+	}
+
+	&__logo{
+		width: 293px;
+		height: 42.49px;
+
+		max-width: 50%;
+	}
+
+	&__social_link{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		height: 25px;
+		padding: 4px;
+		border-radius: 15px;
+		background: rgb(229, 41, 53);
+		box-sizing: border-box;
+
+		& .icon{
+			width: 17px;
+			height: 17px;
+		}
+
+		& span{
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 10px;
+			font-weight: 600;
+			line-height: 120%;
+			color: #fff;
+		}
+	}
+}

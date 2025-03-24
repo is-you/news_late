@@ -1,0 +1,124 @@
+.news_list{
+  margin-bottom: 100px;
+
+  @media screen and (max-width: $tablet-max) {
+    margin-bottom: 50px;
+  }
+}
+
+.news_preview__list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 86px 0;
+
+  margin-bottom: 70px;
+
+  @media screen and (max-width: $tablet-max) {
+    margin-bottom: 35px;
+    gap: 40px 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+   gap: 10px;
+  }
+}
+
+.news_post_preview {
+  display:        flex;
+  flex-direction: column;
+  gap:            20px;
+
+  width:          420px;
+
+  @media screen and (min-width: $tablet-max) {
+      &:last-child{
+        display: none;
+      }
+  }
+
+  @media screen and (max-width: $desktop) {
+    width: 31%;
+  }
+
+  @media screen and (max-width: $tablet-max) {
+    width: 48%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+
+  &__title {
+    font-size:   19.75px;
+    font-weight: 600;
+    line-height: 120%;
+
+    color:       var(--color-title);
+  }
+
+  &__description {
+    font-size:   15.4px;
+    font-weight: 400;
+    line-height: 120%;
+    color:       var(--color-link);
+  }
+
+
+  &__meta {
+    display:         flex;
+    justify-content: flex-start;
+  }
+
+  &__date, &__category {
+    color:       var(--color-link);
+    font-size:   12px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  &__date{
+    width: 120px;
+  }
+
+  &__image {
+    width:           100%;
+    height:          auto;
+    object-fit:      contain;
+    object-position: center;
+
+    &_wrapper {
+      max-height:    255px;
+      border-radius: 20px;
+      overflow:      hidden;
+    }
+  }
+}
+
+.ad_block{
+  height: 317px;
+  border-radius: 35px;
+  background: rgb(229, 41, 53);
+
+  @media screen and (max-width: $tablet-max) {
+    height: 200px;
+  }
+
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    color: rgb(255, 255, 255);
+    font-size: 55.51px;
+    font-weight: 400;
+
+    @media screen and (max-width: $tablet-max) {
+      font-size: 20px;
+    }
+  }
+}
+

@@ -4,14 +4,18 @@
 	width: calc(100% - 180px);
 	min-width: var(--width-Content);
 
-	@media screen and (max-width: $desktop) {
-
+	@media screen and (max-width: $tablet-max) {
+		padding: 20px 0 50px;
 	}
 
 	&__nav{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+
+		@media screen and (max-width: $tablet) {
+			align-items: center;
+		}
 	}
 
 	&__burger_btn{
@@ -23,6 +27,7 @@
 
 		width: 55px;
 		height: 25px;
+		margin-right: 45px;
 		padding: 4px;
 
 		border-radius: 15px;
@@ -53,6 +58,10 @@
 		height: 42.49px;
 
 		max-width: 50%;
+
+		@media screen and (max-width: $tablet) {
+		    max-width: 35%;
+		}
 	}
 
 	&__social_link{
@@ -116,6 +125,10 @@
 		font-weight: 600;
 		color: #fff;
 		padding: 0 30px;
+
+		@media screen and (max-width: $tablet) {
+		    font-size: 25px;
+		}
 
 		&--current{
 			border-radius: 20px;

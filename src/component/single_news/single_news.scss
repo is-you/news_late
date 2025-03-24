@@ -1,0 +1,125 @@
+.single_news{
+  margin-bottom: 120px;
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: $tablet-max) {
+    margin-bottom: 60px;
+  }
+}
+
+
+
+.single_news {
+  &__text_content{
+    margin-top: 90px;
+    width: 50%;
+
+    @media screen and (max-width: $tablet-max) {
+      width: 100%;
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__test_btn{
+    width: 50%;
+    height: 55px;
+    padding: 0 40px;
+
+    text-align: left;
+    background-color: rgb(229, 41, 53);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 55px;
+    border-radius: 30px;
+
+    @media screen and (max-width: $tablet-max) {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  &__text{
+    margin-bottom: 90px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+
+    @media screen and (max-width: $tablet-max) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__header{
+    padding: 0 10px;
+    width:          50%;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $tablet-max) {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size:   30px;
+    font-weight: 600;
+    line-height: 120%;
+
+    color:       var(--color-title);
+  }
+
+  &__description {
+    font-size:   15.4px;
+    font-weight: 400;
+    line-height: 120%;
+    color:       var(--color-link);
+  }
+
+
+  &__meta {
+    display:         flex;
+    justify-content: flex-start;
+  }
+
+  &__date, &__category {
+    color:       var(--color-link);
+    font-size:   12px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  &__date{
+    width: 120px;
+  }
+
+  &__image {
+    width:           100%;
+    height:          100%;
+    object-fit:      cover;
+    object-position: center;
+
+    &_wrapper {
+      flex-shrink: 0;
+
+      width:          50%;
+      height:    410px;
+
+      border-radius: 30px;
+      overflow:      hidden;
+
+      @media screen and (max-width: $tablet-max) {
+        width: 100%;
+      }
+    }
+  }
+}

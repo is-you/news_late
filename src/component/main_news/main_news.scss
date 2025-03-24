@@ -19,7 +19,16 @@
 
   @media screen and (max-width: $tablet-max) {
       display: none;
+
+    &--single{
+      display: block;
+      order: 1;
+
+      width: 100%;
+    }
   }
+
+
 
   @media screen and (max-width: $notebook) {
     width: calc(50% - 60px);

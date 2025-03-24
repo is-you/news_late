@@ -18,6 +18,10 @@
   margin-top: calc(var(--height-header) + var(--margin-header));
 
   width: calc(50% - 140px);
+
+  @media screen and (max-width: $tablet-max) {
+      display: none;
+  }
 }
 
 .short_news_preview {
@@ -91,6 +95,10 @@
   gap:            20px;
 
   width:          50%;
+
+  @media screen and (max-width: $tablet-max) {
+      width: 100%;
+  }
 
 
   &__header{

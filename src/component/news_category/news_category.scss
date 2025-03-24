@@ -13,20 +13,40 @@
   &__list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $tablet) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: $mobile) {
+      justify-content: space-evenly;
+    }
+
+  }
+
+  &__item{
+    @media screen and (max-width: $tablet) {
+      min-width: 33%;
+    }
   }
 
   &__link{
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &__title{
       display: inline-block;
 
-      color: rgb(30, 37, 37);
+      color: var(--color-title);
       font-size: 15px;
       font-weight: 400;
       line-height: 120%;
 
+      @media screen and (max-width: $mobile) {
+        font-size: 12px;
+      }
     }
 
     &__img{
@@ -37,13 +57,25 @@
       height: 54px;
 
       border-radius: 50%;
-      object-fit:      contain;
+      object-fit:      cover;
       object-position: center;
 
-      @media screen and (max-width: $tablet-max) {
+      @media screen and (max-width: $notebook) {
         width: 40px;
         height: 40px;
         margin-right: 10px;
+      }
+
+      @media screen and (max-width: $tablet-max) {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
       }
     }
   }

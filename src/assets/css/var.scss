@@ -1,44 +1,44 @@
 $desktop-max: 1920px;
-$desktop: 1440px;
-$notebook: 1280px;
-$tablet-max: 1024px;
-$tablet: 768px;
-$mobile: 480px;
+$desktop:     1440px;
+$notebook:    1280px;
+$tablet-max:  1024px;
+$tablet:      768px;
+$mobile:      480px;
 
 :root {
   /* T - thin, El - extra light, L - light, ... Bl - black */
   /* SIZE GLOBAL  */
 
-  --margin-T: 8px; // 8 px
-  --margin-El: 16px;
-  --margin-L: 24px;
-  --margin-R: 32px;
-  --margin-M: 40px;
-  --margin-B: 56px;
-  --margin-Bl: 64px;
+  --margin-T:        8px; // 8 px
+  --margin-El:       16px;
+  --margin-L:        24px;
+  --margin-R:        32px;
+  --margin-M:        40px;
+  --margin-B:        56px;
+  --margin-Bl:       64px;
 
   /* OUT */
-  --padding-Content: var(--margin-El)   ;
-  --width-Content: 1350px;
+  --padding-Content: var(--margin-El);
+  --width-Content:   1350px;
 
   /* SIZE BLOCK */
 
   /* FONT */
 
   /* COLORS */
-  --color-white: #FBFBFB;
-  --color-title: #1B1B1B;
-  --color-link: #8FA3B8;
+  --color-white:     #FBFBFB;
+  --color-title:     #1B1B1B;
+  --color-link:      #8FA3B8;
 
   /* OTHER */
 
 
-  @media screen and (max-width: $desktop){
+  @media screen and (max-width: $desktop) {
     --width-Content: 90%;
   }
 
   @media screen and (max-width: $mobile) {
-      --width-Content: calc(100% - 20px);
+    --width-Content: calc(100% - 20px);
   }
 }
 

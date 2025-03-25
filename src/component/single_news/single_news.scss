@@ -21,8 +21,8 @@
 
     @media screen and (max-width: $tablet-max) {
       width: 100%;
-      margin-top: 45px;
-      margin-bottom: 45px;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -53,7 +53,9 @@
     line-height: 120%;
 
     @media screen and (max-width: $tablet-max) {
-      margin-bottom: 45px;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 30px;
     }
   }
 
